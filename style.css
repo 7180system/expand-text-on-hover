@@ -1,0 +1,37 @@
+body {
+   background: #0759f1;
+}
+p {
+   text-align:center;
+   font-size:72px;
+   font-family: 'Poppins';
+   color: #ffb900;
+}
+p>span {
+   display:inline-block;
+}
+p span span {
+
+   display:inline-block;
+   
+   max-width:0;
+   
+   overflow:hidden;
+   
+   transition:max-width 1s;
+   
+   vertical-align:bottom;
+   
+   }
+   
+   p span span::after {
+   
+   content:'\00a0'
+   
+   }
+   
+   p:hover span span {
+   
+   max-width:500px;
+   
+   }
